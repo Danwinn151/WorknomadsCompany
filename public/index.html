@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="img/download.png">
+  <link href="output.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <style>
+    .sticky1 {
+    position: fixed;
+    top: 0;
+    right: 0%;
+    width: 100%;
+    z-index: 3;
+  }
+  .sticky1 + .content {
+    padding-top: 60px;
+  }
+  .image{
+    background: url("section2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-color: pink;
+  }
+  </style>
+</head>
+<body>
+    <nav class="sticky1 p-7 bg-white md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center">
+        <span class="font-bold  text-black">
+          Worknomads
+        </span>
+        <span class="text-3xl cursor-pointer md:hidden block">
+          <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+        <ul class="text-center md:flex md:items-center z-[1] md:z-auto md:sticky bg-black md:bg-white absolute  w-full left-0 md:w-auto md:py-0 py-4
+      md:pl-0 pl-7 md:opacity-100 opacity-0 top:[-400px] md:text-black text-white transistion-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0">
+          <a class="text-xl hover:bg-cyan-300 cursor-pointer duration-300" href="#">Home</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a class="text-xl hover:bg-cyan-300 cursor-pointer duration-300" href="#about-me">About Us</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a class="text-xl hover:bg-cyan-300 cursor-pointer duration-300" href="#">Our Projects</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a class="text-xl hover:bg-cyan-300 cursor-pointer duration-300" href="#skills">Our Skills</a>
+        </li>
+        <button class="bg-green-400 hover:bg-red-400 rounded-lg px-6 py-1">
+          <a href="#contact-me">Contact Us</a>
+        </button>
+      </ul>
+    </nav>
+  
+    <section>
+      <div class="container  shadow-md mx-3  py-3 my-80">
+        <h1 class="text-center font-bold">
+          Vetted and Trusted <span class="text-red-600">talents</span>
+        </h1>
+        <div>
+          <p class="font-bold mx-5 text-center">
+            At <span>WorkNomads</span>, we train, test and place talent in various industries. 
+            We have access to the best pool of skills in the tech Industry.
+          </p>
+        </div>
+        <div class="flex justify-center gap-5 my-3">
+          <button class="bg-blue-500 rounded-md px-3 py-3">Hire Talent</button>
+          <button class="bg-red-600 rounded-md px-3 py-3">Join Talent Pool</button>
+        </div>
+              <img alt="..." class="max-w-full rounded-lg shadow-lg" height="50px"
+                src="section1.png" />
+             </div>
+    </section>
+    <section class="pb-10 pt-10 bg-green-900 rounded">
+      <div class="relative block container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-6/12 text-center mx-auto mb-4 py-3 ml-auto mr-auto">
+            <div class="text-white">
+              <i class="fas fa-user-friends"></i>
+            </div>
+            <h3 class="text-3xl mb-2 font-semibold leading-normal">
+              We Derive Pleasure Working with Clients
+            </h3>
+            <p class="font-mono text-gray-500 mt-10">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus omnis accusamus, vel nostrum
+              voluptate recusandae totam, maiores explicabo itaque cumque est magni
+              iusto aspernatur reiciendis vitae, necessitatibus magnam architecto a.
+            </p>
+          </div>
+          <div data-aos="zoom-in-left" data-aos-duration="3000" class="md:w-6/12 h-full  mx-auto px-4 ml-auto mr-auto">
+            <img alt="..."
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+              class="w-full align-middle rounded-t-lg" />
+          </div>
+          
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+ 
+
+  <section class="pb-10 pt-10">
+      <div class="container px-4 relative mx-auto">
+        <div class="text-xl font-semibold text-center mb-10">
+           <h1 class="text-xl font-bold text-red-500">
+            Our Projects
+           </h1>
+           <hr class="w-20 mx-auto border-red-500  border">
+        </div>
+        <div class="flex flex-wrap justify-center items-center">
+           <div class="w-full md:w-3/12 mx-auto text-center px-4 shadow flex justify-center items-center mt-10 mb-10">
+            <div class="py-4 px-4 mx-auto">
+              <img src="../img/My Portfolio - Google Chrome 7_17_2022 11_08_36 PM.png" alt=""/>
+              <div class="mt-10">
+                <a href="https://github.com/Danwinn151/portfolio-tailwind" class="font-semibold text-green-600 mb-5">
+                  A Responsive <span class="text-red-600">  Portfolio </span>
+                </a>
+                <p class="font-semibold  lg:h-10 overflow-hidden lg:hover:h-40 cursor-pointer">
+                  This was a Responsive Portfolio site that i created by using Tailwind CSS
+                </p>
+              </div>
+             
+            </div>
+              
+           </div>
+           <div class="w-full md:w-3/12 mx-auto text-center px-4 shadow flex justify-center items-center mt-10 mb-10">
+            <div class="py-4 px-4 mx-auto">
+              <img src="../img/Apple Project - Google Chrome 7_16_2022 9_17_43 PM (2).png" alt=""/>
+              <div class="mt-10">
+                <a href="https://github.com/Danwinn151/Apple-mini-website" class="font-semibold text-yellow-400  mb-10">
+                Apple Project
+               </a>
+               <p class="font-semibold lg:h-10 overflow-hidden lg:hover:h-40 cursor-pointer">
+                 This was a Responsive Apple site that i created with HTML and CSS 
+               </p>
+              </div>
+             
+            </div>
+              
+           </div>
+           <div class="w-full md:w-3/12 mx-auto text-center px-4 shadow flex justify-center items-center mt-10 mb-10">
+            <div class="py-4 px-4">
+              <img src="../img/Untitled - Google Chrome 7_16_2022 9_31_58 PM (2).png" alt=""/>
+              <div class="mt-10">
+                <a href="https://github.com/Danwinn151/server" class="font-semibold text-gray-900  mb-5">
+                A Server with <span class="text-yellow-500">Express</span>
+             </a>
+             <p class="font-semibold h-10 lg:overflow-hidden lg:hover:h-60 cursor-pointer">
+              This was a server that i created using Express and Nodejs
+              and i also connected it to a database 
+            </p>
+              </div>
+             
+            </div>
+              
+           </div>
+
+
+        </div>
+        
+
+      </div>
+  </section>
+  <section class="image bg-red-400 h-36 py-10 text-center">
+    <div class="container py-4">
+      <div class="text-black text-center">
+        <p class="font-bold text-xl">
+          We have impacted the lives of <br>
+          thousands around the world 
+        </p>
+      </div>
+      <div class="font-semibold text-sm font-serif text-black text-center">
+       <p> 6,000 trained in 14 months</p>
+      </div>
+      <div>
+       <p>Talent Placed in 5 Countries</p>
+      </div>
+      <div class="countries flex flex-row mt-4">
+         <div class="w-3/12 bg-white mx-8 px-3 py-3">
+            Germany
+         </div>
+         <div class="w-3/12  bg-white mx-8 px-3 py-3">
+           England
+        </div>
+        <div class="w-3/12  bg-white mx-8 px-3 py-3">
+          India
+        </div>
+        <div class="w-3/12  bg-white mx-8 px-3 py-3">
+          Nigeria
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div data-aos="fade-right" data-aos-duration="1500">
+    <section id="contact-me" class="mx-auto px-4 py-3">
+
+      <div class="container mx-auto px-4 py-4">
+            <div class="relative flex flex-col justify-center items-center">
+              <div class="w-full text-center mx-auto">
+                <div class="px-4 py-4">
+                   <h1 class="text-green-500 font-extrabold text-xl">
+                    Contact Us
+                   </h1>
+                   <hr class="w-10 text-slate-800 bg-black border-blue-900 mx-auto">
+                </div>
+              </div>
+              <div class="mx-auto px-4 py-5">
+                <div class="relative w-full mb-3 mt-8">
+                  <label
+                    class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                    for="full-name"
+                    >Full Name</label
+                  ><input
+                    type="text"
+                    class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                    placeholder="Full Name"
+                    style="transition: all 0.15s ease 0s;"
+                  />
+                </div>
+                <div class="relative w-full mb-3">
+                  <label
+                    class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                    for="email"
+                    >Email</label
+                  ><input
+                    type="email"
+                    class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                    placeholder="Email"
+                    style="transition: all 0.15s ease 0s;"
+                  />
+                </div>
+                <div class="relative w-full mb-3">
+                  <label
+                    class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                    for="message"
+                    >Message</label
+                  ><textarea
+                    rows="4"
+                    cols="80"
+                    class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                    placeholder="Type a message..."
+                  ></textarea>
+                </div>
+                <div class="text-center mt-6">
+                  <button
+                    class="bg-green-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                    style="transition: all 0.15s ease 0s;"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+    </section>
+
+  </div>
+ 
+  <footer class="relative bg-gray-300 pt-8 pb-6">
+    <div
+      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px;"
+    >
+      <svg
+        class="absolute bottom-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        y="0"
+      >
+        <polygon
+          class="text-gray-300 fill-current"
+          points="2560 0 2560 100 0 100"
+        ></polygon>
+      </svg>
+    </div>
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+          <h5 class="text-lg mt-0 mb-2 text-gray-700">
+            Find me on any of these platforms, I respond 1-2 business days.
+          </h5>
+          <div class="mt-6">
+            <button
+              class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button"
+            >
+            <a href="https://mobile.twitter.com/Daniel53353708">
+              <i class="fab fa-twitter"></i>
+            </a>
+            ><button
+              class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button"
+            >
+            <a href="https://web.facebook.com/danny.miracle.946/">
+              <i class="fab fa-facebook"></i>
+            </a>
+            ><button
+              class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button"
+            >
+              <i class="flex fab fa-dribbble"></i></button
+            ><button
+              class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              type="button"
+            >
+            <a href="https://github.com/Danwinn151">
+              <i class="flex fab fa-github"></i>
+            </a>
+            </button>
+          </div>
+        </div>
+        <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <span
+                class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                >Useful Links</span
+              >
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://github.com/Danwinn151"
+                    >About Me</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://github.com/Danwinn151"
+                    >Github</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://github.com/Danwinn151"
+                    >Free Products</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="w-full lg:w-4/12 px-4">
+              <span
+                class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                >Other Resources</span
+              >
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://github.com/Danwinn151"
+                    >MIT License</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://github.com/Danwinn151"
+                    >Terms &amp; Conditions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://github.com/Danwinn151"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://github.com/Danwinn151"
+                    >Contact me</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-400" />
+      <div
+        class="flex flex-wrap items-center md:justify-between justify-center"
+      >
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-gray-600 font-semibold py-1">
+            Copyright © 2022 Portfolio Kit by
+            <a
+              href="https://www.creative-tim.com"
+              class="text-gray-600 hover:text-gray-900"
+              >Daniel Miracle</a
+            >.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    const Menu = (e) => {
+      const list = document.querySelector('ul');
+      e.name === "menu-outline" ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) :
+        (e.name = "menu-outline", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+    AOS.init()
+  </script>
+  
+  
+
+</body>
+
+</html>
+
+
